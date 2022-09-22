@@ -1,15 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Portfolio setup and mobile first
 
-> Description the project.
+
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- html
+- css
 
 ## Live Demo (if available)
 
@@ -24,17 +23,6 @@
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
 
 
 

@@ -1,0 +1,77 @@
+header {
+  position: absolute;
+  display: flex;
+  width: 1440px;
+  height: 72px;
+  background-color: #3e3c3c;
+}
+a { text-decoration: none; }
+.oluchi {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.port {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.about {
+  width: 45px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.contact {
+  width: 63px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.h {
+  color: #f55800;
+  width: 566px;
+  height: 160px;
+  line-height: 82px;
+}
+section {
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  width: 566px;
+  height: 739px;
+  align-items: center;
+}
+main {
+  position: absolute;
+  width: 1440px;
+  height: 870px;
+  left: 0px;
+  top: 0px;
+  background: #1c1a19;
+}
+ aside {
+  position: absolute;
+  left: 600px; 
+  top: 50px; 
+  width: 600px;
+  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+} 
+img {
+  position: absolute;
+  width: 600px;
+  top: 0%;
+  bottom: 0%;
+  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+}
+.container {
+  display: flex;
+  width: 1440px;
+  height: 870px;
+}
