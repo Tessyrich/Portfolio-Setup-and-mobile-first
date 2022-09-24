@@ -230,7 +230,7 @@ section img {
   position: absolute;
   width: 375px;
   height: 3455px;
-  left: 0;
+  left: 20px;
   top: 900px;
 }
 
@@ -323,6 +323,7 @@ section img {
   display: flex;
   align-items: center;
   color: #091e42;
+  margin: 0;
 }
 
 .support {
@@ -333,6 +334,7 @@ section img {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin: 0;
   color: #091e42;
 }
 
@@ -449,8 +451,8 @@ section img {
   align-items: center;
   padding: 12px;
   gap: 10px;
-  width: 124px;
-  height: 48px;
+  width: 98px;
+  height: 26px;
   background: #ff6b00;
   flex: none;
   order: 3;
@@ -458,7 +460,7 @@ section img {
 }
 
 .see {
-  width: 100px;
+  width: 120px;
   height: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -470,6 +472,7 @@ section img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
+  text-decoration: none;
 }
 
 .frame-sub {
@@ -507,7 +510,7 @@ section img {
   top: 0;
   bottom: 0;
   width: 327px;
-  height: 386px;
+  height: 370px;
   margin-top: 4em;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/Img\ Place.png);
 }
@@ -527,9 +530,6 @@ section img {
 }
 
 .right-works {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 20px 50px !important;
   gap: 12px;
   position: absolute;
@@ -541,7 +541,6 @@ section img {
 
 .pro {
   width: 295px;
-  height: 81px;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -553,7 +552,6 @@ section img {
 
 .sub1 {
   width: 295px;
-  height: 87px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -641,31 +639,22 @@ section img {
   color: #fff;
 }
 
-.action {
-  position: relative;
-  height: 48px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #ff6b00;
-}
-
 .but {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
   gap: 10px;
-  position: absolute;
-  width: 124px;
-  height: 24px;
-  left: calc(50% - 124px / 2);
-  top: calc(50% - 48px / 2);
+  width: 303px;
+  height: 26px;
   background: #ff6b00;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  justify-content: center;
 }
 
 .see1 {
-  width: 100px;
   height: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -673,8 +662,9 @@ section img {
   font-size: 17px;
   line-height: 24px;
   display: flex;
-  align-items: center;
+  text-decoration: none;
   text-align: center;
+  align-items: center;
   letter-spacing: 0.03em;
   color: #fff;
 }
@@ -683,7 +673,7 @@ section img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2px 5px;
+  padding: 2px 10px;
   background: #1c1a19;
   position: absolute;
   width: 375px;
@@ -693,7 +683,7 @@ section img {
 }
 
 .primary {
-  width: 327px;
+  width: 427px;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-size: 72px;
@@ -711,6 +701,8 @@ section img {
   font-size: 16px;
   line-height: 24px;
   color: #f4f5f7;
+  letter-spacing: 0.5px;
+  font-weight: 100;
 }
 
 .button {
@@ -719,8 +711,8 @@ section img {
   align-items: center;
   padding: 12px;
   gap: 10px;
-  width: 161px;
-  height: 48px;
+  width: 145px;
+  height: 32px;
   background: #ff6b00;
 }
 
@@ -735,6 +727,7 @@ section img {
   display: flex;
   align-items: center;
   text-align: center;
+  text-decoration: none;
   letter-spacing: 0.03em;
   color: #fff;
 }
@@ -743,22 +736,22 @@ section img {
   width: 493.27px;
   height: 20px;
   left: 708.27px;
-  top: 4521px;
+  top: 3621px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .img-about img {
   position: absolute;
-  left: 115px;
+  left: 110px;
   right: 109.81%;
-  top: -30px;
+  top: -110px;
   bottom: 0.07%;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .divider {
   position: relative;
-  width: 327px;
+  width: 360px;
   height: 17px;
   left: 24px;
   top: 600px;
@@ -767,6 +760,7 @@ section img {
 
 .divi {
   position: absolute;
+  width: 325px;
   height: 0;
   left: 0;
   right: 0;
@@ -776,13 +770,11 @@ section img {
 
 .skill {
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 120px 24px;
   gap: 24px;
   position: absolute;
   width: 349px;
-  height: 1241.46px;
   left: calc(38% - 300px / 2);
   top: 570px;
   background-color: #1c1a19;
@@ -794,7 +786,6 @@ section img {
   align-items: center;
   padding: 8px 12px;
   gap: 12px;
-  width: 225.46px;
   height: 41.46px;
 }
 
@@ -804,7 +795,6 @@ section img {
   align-items: center;
   padding: 0;
   gap: 24px;
-  width: 225.46px;
   height: 281.46px;
 }
 
@@ -816,7 +806,6 @@ section img {
 }
 
 .li-items p {
-  width: 164px;
   height: 24px;
   font-family: 'InaiMathi', sans-serif;
   font-style: normal;
@@ -832,10 +821,8 @@ section img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 12px;
   gap: 8px;
-  width: 186px;
-  height: 216px;
+  height: 205px;
 }
 
 .mjava {
@@ -843,12 +830,10 @@ section img {
   flex-direction: row;
   align-items: center;
   padding: 12px 0;
-  width: 162px;
   height: 48px;
 }
 
 .java {
-  width: 114px;
   height: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -866,12 +851,10 @@ section img {
   flex-direction: row;
   align-items: center;
   padding: 12px 0;
-  width: 162px;
   height: 48px;
 }
 
 .ruby {
-  width: 162px;
   height: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -889,12 +872,10 @@ section img {
   flex-direction: row;
   align-items: center;
   padding: 12px 0;
-  width: 162px;
   height: 48px;
 }
 
 .html {
-  width: 162px;
   height: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -912,12 +893,10 @@ section img {
   flex-direction: row;
   align-items: center;
   padding: 12px 0;
-  width: 162px;
   height: 48px;
 }
 
 .css {
-  width: 114px;
   height: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -936,8 +915,9 @@ section img {
   align-items: center;
   padding: 0;
   gap: 24px;
+  margin-top: 25px;
   width: 225.46px;
-  height: 450.46px;
+  height: 360.46px;
 }
 
 .li-items1 p {
@@ -964,4 +944,25 @@ section img {
   height: 18px;
   background: #ff6b00;
   border-radius: 150px;
+}
+
+.button:hover,
+.but:hover,
+.buttom:hover {
+  background-color: white;
+  border: 1px solid#ff6b00;
+}
+
+a:disabled {
+  background-color: grey;
+}
+
+a:hover {
+  color: #ff6b00;
+}
+
+.buttom:disabled,
+.but:disabled,
+.button:disabled {
+  background-color: white;
 }
