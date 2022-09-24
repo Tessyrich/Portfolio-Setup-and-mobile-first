@@ -242,10 +242,6 @@ section img {
   gap: 24px;
   width: 327px;
   height: 107px;
-
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
