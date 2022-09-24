@@ -231,7 +231,7 @@ section img {
   width: 375px;
   height: 3455px;
   left: 0;
-  top: 682px;
+  top: 900px;
 }
 
 .title {
@@ -247,10 +247,10 @@ section img {
   flex-grow: 0;
 }
 
-.title p {
+.title h2 {
   width: 327px;
   height: 83px;
-  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -351,8 +351,8 @@ section img {
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
-  width: 49px;
-  height: 40px;
+  width: 16px;
+  height: 18px;
   background: #fff;
   border: 1px solid #8993a4;
 }
@@ -377,6 +377,7 @@ section img {
   padding: 10px 12px;
   width: 56px;
   height: 40px;
+  margin: 0 20px;
   background: #fff;
   border: 1px solid #8993a4;
 }
@@ -401,6 +402,7 @@ section img {
   padding: 10px 12px;
   width: 95px;
   height: 40px;
+  margin-right: 20px;
   background: #fff;
   border: 1px solid #8993a4;
 }
@@ -524,7 +526,7 @@ section img {
   background: #262626;
 }
 
-.right-block {
+.right-works {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -533,7 +535,7 @@ section img {
   position: absolute;
   width: 327px;
   height: 248px;
-  left: calc(50% - 327px / 2);
+  left: calc(40% - 327px / 2);
   bottom: 62px;
 }
 
@@ -545,6 +547,7 @@ section img {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
+  margin-top: 80px;
   color: #fff;
 }
 
@@ -575,11 +578,12 @@ section img {
   align-items: center;
   padding: 10px 12px;
   width: 50px;
-  height: 40px;
+  height: 20px;
+  list-style: none;
   background: rgba(255, 255, 255, 0.24);
 }
 
-.tags1 li {
+.tags1 h6 {
   width: 32px;
   height: 20px;
   list-style: none;
@@ -593,15 +597,16 @@ section img {
 
 .tags2 {
   display: flex;
+  list-style: none;
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
-  width: 95px;
-  height: 40px;
+  width: 110px;
+  height: 20px;
   background: rgba(255, 255, 255, 0.24);
 }
 
-.tags2 li {
+.tags2 h6 {
   width: 71px;
   height: 20px;
   list-style: none;
@@ -615,15 +620,16 @@ section img {
 
 .tags3 {
   display: flex;
+  list-style: none;
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
   width: 61px;
-  height: 40px;
+  height: 20px;
   background: rgba(255, 255, 255, 0.24);
 }
 
-.tags3 li {
+.tags3 h6 {
   width: 37px;
   height: 20px;
   list-style: none;
@@ -677,34 +683,31 @@ section img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2px 10px;
-  gap: 2px;
+  padding: 2px 5px;
   background: #1c1a19;
   position: absolute;
   width: 375px;
   height: 563px;
   left: 0;
-  top: 3900px;
+  top: 4300px;
 }
 
 .primary {
   width: 327px;
-  height: 79px;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 72px;
-  line-height: 88px;
+  line-height: 10px;
   letter-spacing: 0.37px;
+  margin-bottom: 25px;
+  margin-top: 150px;
   color: #ff6b00;
 }
 
 .description {
   width: 327px;
-  height: 148px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #f4f5f7;
@@ -738,7 +741,7 @@ section img {
 
 .img-about {
   width: 493.27px;
-  height: 258.7px;
+  height: 20px;
   left: 708.27px;
   top: 4521px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -746,9 +749,9 @@ section img {
 
 .img-about img {
   position: absolute;
-  left: 109px;
+  left: 115px;
   right: 109.81%;
-  top: -90px;
+  top: -30px;
   bottom: 0.07%;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
@@ -840,7 +843,7 @@ section img {
   flex-direction: row;
   align-items: center;
   padding: 12px 0;
-  width: 114px;
+  width: 162px;
   height: 48px;
 }
 
@@ -886,12 +889,12 @@ section img {
   flex-direction: row;
   align-items: center;
   padding: 12px 0;
-  width: 114px;
+  width: 162px;
   height: 48px;
 }
 
 .html {
-  width: 114px;
+  width: 162px;
   height: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -909,7 +912,7 @@ section img {
   flex-direction: row;
   align-items: center;
   padding: 12px 0;
-  width: 114px;
+  width: 162px;
   height: 48px;
 }
 
