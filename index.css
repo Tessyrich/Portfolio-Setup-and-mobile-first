@@ -1021,12 +1021,14 @@ textarea {
   background: #fbf8f7;
   color: #3c3a39;
 }
+
 .line {
   width: 327px;
   height: 1px;
   margin: 0;
-  background: #DBD8D7;
+  background: #dbd8d7;
 }
+
 .get-in {
   display: flex;
   position: absolute;
@@ -1038,9 +1040,9 @@ textarea {
   height: 48px;
   left: 100px;
   border: none;
-  background: #FF6B00;
-}
-.get-in:hover {
-  background-color: #DBD8D7;
+  background: #ff6b00;
 }
 
+.get-in:hover {
+  background-color: #dbd8d7;
+}
