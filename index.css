@@ -1044,5 +1044,30 @@ textarea {
 }
 
 .get-in:hover {
-  background-color: #dbd8d7;
+  background-color: white;
+  border: 1px solid#ff6b00;
+  color: #ff6b00;
+}
+
+.ico {
+  top: 280px;
+  left: 50px;
+}
+
+.di {
+  position: absolute;
+  height: 1px;
+  width: 327px;
+  top: 800px;
+  background: #dfe1e6;
+}
+
+.fin {
+  position: absolute;
+  width: 134px;
+  height: 5px;
+  left: calc(41% - 134px / 2 - 0.5px);
+  top: 910px;
+  background: #0d151e;
+  border-radius: 10px;
 }
