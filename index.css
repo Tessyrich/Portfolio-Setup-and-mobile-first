@@ -966,3 +966,60 @@ a:hover {
 .button:disabled {
   background-color: white;
 }
+
+.form-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  gap: 58px;
+  position: absolute;
+  width: 375px;
+  height: 844px;
+  left: 0;
+  top: 6038px;
+}
+
+.h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #172b4d;
+}
+
+input {
+  border: none;
+  width: 327px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  left: 30px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+textarea {
+  border: none;
+  width: 317px;
+  height: 114px;
+  position: absolute;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  background: #fbf8f7;
+  color: #3c3a39;
+}
+
+
