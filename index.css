@@ -1385,6 +1385,7 @@ textarea {
     height: 100%;
     background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/Img\ Placeholder\ third.png);
   }
+
   .tags:hover,
   .tag:hover {
     width: 100%;
@@ -1393,10 +1394,9 @@ textarea {
   }
 
   .imp-desk:hover,
-  .card-works:hover{
+  .card-works:hover {
     width: 55%;
     transform: scale(50%);
     transition: 2s;
   }
-
 }
