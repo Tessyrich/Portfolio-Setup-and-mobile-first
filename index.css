@@ -141,7 +141,7 @@ main {
 }
 
 .first-icon {
-  top: 85vh;
+  top: 86vh;
   position: absolute;
   left: 2rem;
 }
@@ -1038,7 +1038,8 @@ textarea {
   display: none;
 }
 
-.imp-desk {
+.imp-desk,
+.desktop-img {
   display: none;
 }
 
