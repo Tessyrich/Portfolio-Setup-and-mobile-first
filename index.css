@@ -136,12 +136,12 @@ main {
   flex-direction: row;
   align-items: center;
   padding: 0;
-  width: 200px;
-  height: 40px;
+  height: 3rem;
+  margin-top: 1rem;
 }
 
 .first-icon {
-  top: 86vh;
+  top: 74vh;
   position: absolute;
   left: 2rem;
 }
@@ -351,7 +351,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  width: 85%;
+  width: 80%;
   row-gap: 1rem;
   height: 7vh;
 }
@@ -978,7 +978,7 @@ textarea {
   left: 100px;
   border: none;
   width: 38%;
-  margin-top: 1rem;
+  margin: 1rem 0;
   background: #ff6b00;
 }
 
