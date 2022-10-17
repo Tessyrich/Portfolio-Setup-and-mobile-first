@@ -19,6 +19,9 @@ header {
   top: 0;
   background: #3c3a39;
 }
+nav{
+  position: relative;
+}
 
 .logo {
   display: flex;
@@ -29,6 +32,33 @@ header {
   height: 7vh;
   margin-top: 1rem;
   left: 12px;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  /* -webkit-transition: all 0.3s ease-in-out; */
+  transition: all 0.1s ease-in-out;
+  background-color: white;
+}
+
+
+.hamburger{
+  display: block;
+  z-index: 999   !important;
+  position: absolute;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px)  rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px)  rotate(-45deg);
 }
 
 .logo p {
@@ -1022,10 +1052,40 @@ textarea {
   background: #0d151e;
   border-radius: 10px;
 }
-
-.head-link {
+.menu-bar{
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: 999;
+  padding: 4rem ;
+ gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  height: 100vh;
   display: none;
 }
+
+.show-navbar{
+  display: block !important;
+}
+
+.indicator{
+  height: 1px;
+  width: 100%;
+  background-color: #dbd8d7;
+}
+.head-link{
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  font-size: x-large;
+ 
+}
+
+/* .head-link {
+  display: none;
+} */
 
 .imp-desk,
 .desktop-img {
@@ -1395,10 +1455,16 @@ textarea {
     justify-content: center;
     width: 100%;
   }
-}
+
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+
 
 .get-in:hover,
 .get:hover {
   transform: rotate(360deg);
   transition: 4s;
+}
 }
