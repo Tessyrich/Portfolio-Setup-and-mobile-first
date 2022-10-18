@@ -19,8 +19,13 @@ header {
   top: 0;
   background: #3c3a39;
 }
-nav{
+
+nav {
   position: relative;
+}
+
+.icon-mess {
+  display: none;
 }
 
 .logo {
@@ -34,29 +39,33 @@ nav{
   left: 12px;
 }
 
-.bar{
+.bar {
   display: block;
   width: 25px;
   height: 3px;
   margin: 5px auto;
+
   /* -webkit-transition: all 0.3s ease-in-out; */
   transition: all 0.1s ease-in-out;
   background-color: white;
 }
 
-
-.hamburger{
+.hamburger {
   display: block;
-  z-index: 999   !important;
+  z-index: 999 !important;
   position: absolute;
+  left: 70%;
+  margin-top: 1.5rem;
 }
 
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(8px)  rotate(45deg);
 }
+
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px)  rotate(-45deg);
 }
@@ -1052,35 +1061,37 @@ textarea {
   background: #0d151e;
   border-radius: 10px;
 }
-.menu-bar{
+
+.menu-bar {
   width: 100%;
   background-color: black;
   position: absolute;
   z-index: 999;
-  padding: 4rem ;
- gap: 2rem;
-  display: flex;
+  padding: 4rem 2rem;
+  gap: 2rem;
   flex-direction: column;
   list-style: none;
   height: 100vh;
   display: none;
 }
 
-.show-navbar{
+.show-navbar {
   display: block !important;
 }
 
-.indicator{
+.indicator {
   height: 1px;
-  width: 100%;
+  width: 90%;
   background-color: #dbd8d7;
+  margin: 1rem 0;
 }
-.head-link{
+
+.head-link {
   text-decoration: none;
   color: white;
   width: 100%;
   font-size: x-large;
- 
+  margin: 1rem 0;
 }
 
 /* .head-link {
@@ -1104,6 +1115,12 @@ textarea {
     display: flex;
   }
 
+  nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
   .head-link {
     color: #dfe1e6;
     text-decoration: none;
@@ -1111,15 +1128,20 @@ textarea {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-size: larger;
     list-style: none;
   }
 
   .menu-bar {
-    margin-left: 25rem;
+    background-color: transparent;
+    margin-left: 30rem;
     width: 70%;
+    z-index: 999;
+    padding: 0.5rem;
+    gap: 2rem;
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 1.5rem;
+    flex-direction: row;
+    list-style: none;
   }
 
   .menu-bar li {
@@ -1456,15 +1478,14 @@ textarea {
     width: 100%;
   }
 
-  .hamburger{
+  .hamburger {
     display: none;
     cursor: pointer;
   }
 
-
-.get-in:hover,
-.get:hover {
-  transform: rotate(360deg);
-  transition: 4s;
-}
+  .get-in:hover,
+  .get:hover {
+    transform: rotate(360deg);
+    transition: 4s;
+  }
 }
