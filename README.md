@@ -9,6 +9,7 @@
 
 - html
 - css
+- javascript
 
 ## Live Demo (if available)
 
@@ -17,18 +18,16 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+You can easily go through this web page by clicking on the menubar to get options on a particular section you can go to.
+For example, when you click on the contact link, it will take you to the section wghere you can fill in your details for follow-up.
 
 
 
 
-## Authors
 
-👤 **Author1**
+## Author
+
+👤 **Oluchi Theresa Ogbonna**
 
 - GitHub: [@githubhandle](https://github.com/tessyrich)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
@@ -52,6 +51,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./LICENSE.txt) licensed.

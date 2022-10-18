@@ -41,8 +41,8 @@ nav {
 
 .bar {
   display: block;
-  width: 25px;
-  height: 3px;
+  width: 18px;
+  height: 2px;
   margin: 5px auto;
 
   /* -webkit-transition: all 0.3s ease-in-out; */
@@ -50,12 +50,17 @@ nav {
   background-color: white;
 }
 
+.bar:hover {
+  background-color: #ff6b00;
+}
+
 .hamburger {
   display: block;
   z-index: 999 !important;
   position: absolute;
-  left: 70%;
+  left: 90%;
   margin-top: 1.5rem;
+  cursor: pointer;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -64,10 +69,14 @@ nav {
 
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(8px)  rotate(45deg);
+  background-color: #6f6c6b;
+  height: 3px;
 }
 
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px)  rotate(-45deg);
+  background-color: #6f6c6b;
+  height: 3px;
 }
 
 .logo p {
@@ -1064,7 +1073,7 @@ textarea {
 
 .menu-bar {
   width: 100%;
-  background-color: black;
+  background-color: #3c3a39;
   position: absolute;
   z-index: 999;
   padding: 4rem 2rem;
@@ -1081,17 +1090,20 @@ textarea {
 
 .indicator {
   height: 1px;
-  width: 90%;
-  background-color: #dbd8d7;
+  width: 100%;
+  background-color: #6f6c6b;
   margin: 1rem 0;
 }
 
 .head-link {
   text-decoration: none;
-  color: white;
+  color: #fff5e1;
   width: 100%;
-  font-size: x-large;
-  margin: 1rem 0;
+  margin: 1rem 1rem;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
 }
 
 /* .head-link {
