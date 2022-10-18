@@ -1461,14 +1461,12 @@ textarea {
   .tags:hover,
   .tag:hover {
     width: 100%;
-    transform: scale(90%);
     transition: 10ms;
   }
 
   .imp-desk:hover,
   .card-works:hover {
     width: 55%;
-    transform: scale(50%);
     transition: 2s;
   }
 
