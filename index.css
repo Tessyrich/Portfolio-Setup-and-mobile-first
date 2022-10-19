@@ -10,6 +10,68 @@ body {
   padding: 0;
 }
 
+.pop-container{
+  width: 100%;
+  position: absolute;
+  top: 0 !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  padding: 1em;
+  z-index: 999;
+  display: none;
+}
+
+.pop-up{
+  padding: 1rem;
+  background-color: #fff;
+  width: 100%;
+}
+.active-pop{
+  display: block;
+}
+
+.close-pop{
+  font-size: 30px;
+  cursor: pointer;
+  color: #0d151e;
+}
+
+.close-pop:hover, .close-pop:focus{
+  color: black;
+  font-weight: 700;
+}
+
+.mult .post-big{
+  display: none;
+}
+.mult .post-small{
+  margin-bottom: 4rem;
+}
+.but-details{
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.mult{
+  margin-bottom: 1rem;
+}
+.details-main{
+  display: flex;
+  flex-direction: column;
+}
+.details-text .sub-details{
+  margin-top: 1rem;
+}
+.desktop-img{
+  width: 100%;
+}
+.det-img{
+  width: 100%;
+}
+.ham{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 header {
   position: absolute;
   width: 100%;
@@ -1115,6 +1177,7 @@ textarea {
   display: none;
 }
 
+
 .img-aboutbig {
   display: none;
 }
@@ -1488,8 +1551,11 @@ textarea {
     width: 100%;
   }
 
-  .hamburger {
+  header .hamburger{
     display: none;
+  }
+
+  .hamburger {
     cursor: pointer;
   }
 
@@ -1497,5 +1563,64 @@ textarea {
   .get:hover {
     transform: rotate(360deg);
     transition: 4s;
+  }
+  .mult .post-small{
+    display: none;
+  }
+  .mult .post-big{
+    display: block;
+    margin: 1rem 0;
+  }
+  .details-main{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .mult{
+    margin-bottom: 1.5rem;
+  }
+  .sub-details{
+    line-height: 30px;
+    margin-bottom: 3.5rem;
+    
+  }
+  .details-img{
+    width: 100%;
+    position: relative;
+  }
+  .det-img{
+    width: 100%;
+  }
+  .but-details{
+    gap: 1rem;
+  }
+  .details-text{
+    width: 70%;
+  }
+
+  .details-text .text{
+    padding-bottom: 3em;
+  }
+
+
+  .pop-container{
+   padding: 3em 0 !important;
+   display: none;
+  }
+
+  .pop-container .hamburger{
+   display: block !important;
+  }
+
+  .pop-container .hamburger .bar{
+    color: red !important;
+  }
+
+  .pop-up{
+    width: 90%;
+    margin: auto;
+    /* padding: 6em; */
+    /* align-items: center; */
+    /* justify-content: center; */
   }
 }
