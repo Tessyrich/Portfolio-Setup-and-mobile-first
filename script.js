@@ -11,6 +11,7 @@ document.querySelectorAll('.head-link').forEach((n) => n.addEventListener('click
   menuBar.classList.remove('show-navbar');
 }));
 
+//CARD ADDED DYNAMICALLY
 const projectsCards = [
   {
     id: '0',
@@ -79,6 +80,8 @@ projectsCards.forEach((projects, index) => {
 `;
   projectsContainer.innerHTML += card;
 });
+
+//CARDPOPUP WINDOW
 function ClosePopUp() {
   popContainer.style.display = 'none';
 }
@@ -218,3 +221,36 @@ for (let i = 0; i < arrayOnclickBtn.length; i += 1) {
     popContainer.style.display = 'block';
   });
 }
+
+//FORM VALIDATION
+const formVal = document.querySelector('.form');
+const usernameEl = document.querySelectorAll('#name');
+const emailEl = document.querySelector('#email');
+const fullName = formVal.elements;
+
+// const mediaqueryList = window.matchMedia('(max-width: 768px');
+
+// const screenTest = (e) => {
+//   if (e.matches) {
+//     fullName.required = false;
+//   } else {
+//     fullName.required = true;
+//   }
+// };
+
+// screenTest(mediaqueryList);
+
+// mediaqueryList.addEventListener(screenTest);
+
+// const { email } = formVal.elements;
+// const errMsgEmail = document.querySelector('small');
+formVal.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const regex = /[A-Z]/;
+  
+  if (!regex.test(emailEl.value)) {
+    formVal.submit();
+  } else {
+    errMsgEmail.innerText = 'Your email should be in the form example@gmail.com';
+  }
+});
