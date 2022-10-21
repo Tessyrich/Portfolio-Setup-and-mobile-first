@@ -224,24 +224,7 @@ for (let i = 0; i < arrayOnclickBtn.length; i += 1) {
 
 // FORM VALIDATION
 const formVal = document.querySelector('.form');
-const inp1 = document.querySelectorAll('.inp1');
-const inp2 = document.querySelectorAll('.inp2');
-const inp3 = document.querySelectorAll('.inp3');
 const emailEl = document.querySelector('#email');
-
-const oluchiValidate = (inputbox) => {
-  if (inputbox !== '') {
-    return inputbox;
-  }
-  return 'please insert your name';
-};
-
-formVal.addEventListener('submit', (e) => {
-  e.preventDefault();
-  oluchiValidate(inp1.value);
-  oluchiValidate(inp2.value);
-  oluchiValidate(inp3.value);
-});
 
 const errMsgEmail = document.querySelector('small');
 formVal.addEventListener('submit', (e) => {
@@ -251,6 +234,6 @@ formVal.addEventListener('submit', (e) => {
   if (!regex.test(emailEl.value)) {
     formVal.submit();
   } else {
-    errMsgEmail.innerText = 'Your email should not be in Uppercase';
+    errMsgEmail.innerText = 'Your email should not be in Uppercase!';
   }
 });

@@ -1116,6 +1116,13 @@ textarea {
   background: #ff6b00;
 }
 
+small {
+  color: red;
+  font-size: larger;
+  font-weight: 500;
+  background-color: #dfe1e6;
+}
+
 .get-in:hover {
   background-color: white;
   border: 1px solid#ff6b00;
