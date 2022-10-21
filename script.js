@@ -186,8 +186,8 @@ const renderCards = (indx) => {
         <span class="close-pop" id="close-pop" onclick='ClosePopUp()'>&times;</span>
       </div>
       <ul class="tag-main tagmain-details">
-        <li class="tag2 tagmain1"><a href="#">${card.tecnologies.tech1}</a></li>
-        <li class="tag3 tagmain2"><a href="#">${card.tecnologies.tech2}</a></li>
+        <li class="tag2"><a href="#">${card.tecnologies.tech1}</a></li>
+        <li class="tag3"><a href="#">${card.tecnologies.tech2}</a></li>
         <li class="tag4 tagmain3"><a href="#">${card.tecnologies.tech3}</a></li>
       </ul>
     </div>
