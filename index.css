@@ -58,6 +58,7 @@ body {
 
 .mult {
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .details-main {
@@ -431,7 +432,7 @@ main {
 .imgp {
   width: 327px;
   height: 237px;
-  background: url(Img\ Placeholder\ desktop.png);
+  background: url(images/Img\ Placeholder.png);
 }
 
 .block {
@@ -524,6 +525,18 @@ main {
   height: 7vh;
   background: #fff;
   border: 1px solid #8993a4;
+}
+
+.tagmain-details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+.tagmain3 {
+  width: 32%;
 }
 
 .buttom {
