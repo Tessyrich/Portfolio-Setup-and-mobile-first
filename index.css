@@ -58,6 +58,7 @@ body {
 
 .mult {
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .details-main {
@@ -477,18 +478,6 @@ main {
   height: 7vh;
 }
 
-.tagmain-details {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1.5rem;
-}
-
-.tagmain3 {
-  width: 32%;
-}
-
 .tag1 {
   align-items: center;
   height: 7vh;
@@ -536,6 +525,18 @@ main {
   height: 7vh;
   background: #fff;
   border: 1px solid #8993a4;
+}
+
+.tagmain-details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.tagmain3 {
+  width: 32%;
 }
 
 .buttom {
@@ -1115,6 +1116,13 @@ textarea {
   background: #ff6b00;
 }
 
+small {
+  color: red;
+  font-size: larger;
+  font-weight: 500;
+  background-color: #dfe1e6;
+}
+
 .get-in:hover {
   background-color: white;
   border: 1px solid#ff6b00;
@@ -1123,7 +1131,7 @@ textarea {
 
 .get-in:active {
   background: #ff6b00;
-  color: white;
+  color: #fff;
 }
 
 .get-in:disabled {

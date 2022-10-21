@@ -11,6 +11,7 @@ document.querySelectorAll('.head-link').forEach((n) => n.addEventListener('click
   menuBar.classList.remove('show-navbar');
 }));
 
+// CARD ADDED DYNAMICALLY
 const projectsCards = [
   {
     id: '0',
@@ -79,6 +80,8 @@ projectsCards.forEach((projects, index) => {
 `;
   projectsContainer.innerHTML += card;
 });
+
+// CARDPOPUP WINDOW
 function ClosePopUp() {
   popContainer.style.display = 'none';
 }
@@ -177,7 +180,7 @@ const renderCards = (indx) => {
     if (cardIndx === indx) {
       document.querySelector('.pop-up').innerHTML = `
       <div class="mult">
-      <div class="ham">
+      <div class="ham va">
         <h2 class="post post-small">${card.titlesmall}</h2>
         <h2 class="post post-big">${card.title}</h2>
         <span class="close-pop" id="close-pop" onclick='ClosePopUp()'>&times;</span>
@@ -218,3 +221,19 @@ for (let i = 0; i < arrayOnclickBtn.length; i += 1) {
     popContainer.style.display = 'block';
   });
 }
+
+// FORM VALIDATION
+const formVal = document.querySelector('.form');
+const emailEl = document.querySelector('#email');
+
+const errMsgEmail = document.querySelector('small');
+formVal.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const regex = /[A-Z]/;
+
+  if (!regex.test(emailEl.value)) {
+    formVal.submit();
+  } else {
+    errMsgEmail.innerText = 'Your email should not be in Uppercase!';
+  }
+});
