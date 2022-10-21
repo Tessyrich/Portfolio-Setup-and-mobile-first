@@ -478,6 +478,18 @@ main {
   height: 7vh;
 }
 
+.tagmain-details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.tagmain3 {
+  width: 32%;
+}
+
 .tag1 {
   align-items: center;
   height: 7vh;
@@ -1190,7 +1202,7 @@ small {
 
 .head-link {
   text-decoration: none;
-  color: #fff5e1;
+  color: #fff;
   width: 100%;
   margin: 1rem 1rem;
   font-family: 'Inter', sans-serif;

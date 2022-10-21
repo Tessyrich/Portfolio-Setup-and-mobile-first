@@ -188,7 +188,7 @@ const renderCards = (indx) => {
       <ul class="tag-main tagmain-details">
         <li class="tag2"><a href="#">${card.tecnologies.tech1}</a></li>
         <li class="tag3"><a href="#">${card.tecnologies.tech2}</a></li>
-        <li class="tag4 tagmain3"><a href="#">${card.tecnologies.tech3}</a></li>
+        <li class="tag4" tagmain3><a href="#">${card.tecnologies.tech3}</a></li>
       </ul>
     </div>
     <div class="details-main">
