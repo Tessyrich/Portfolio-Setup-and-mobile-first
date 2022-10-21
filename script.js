@@ -11,7 +11,7 @@ document.querySelectorAll('.head-link').forEach((n) => n.addEventListener('click
   menuBar.classList.remove('show-navbar');
 }));
 
-//CARD ADDED DYNAMICALLY
+// CARD ADDED DYNAMICALLY
 const projectsCards = [
   {
     id: '0',
@@ -81,7 +81,7 @@ projectsCards.forEach((projects, index) => {
   projectsContainer.innerHTML += card;
 });
 
-//CARDPOPUP WINDOW
+// CARDPOPUP WINDOW
 function ClosePopUp() {
   popContainer.style.display = 'none';
 }
@@ -222,35 +222,35 @@ for (let i = 0; i < arrayOnclickBtn.length; i += 1) {
   });
 }
 
-//FORM VALIDATION
+// FORM VALIDATION
 const formVal = document.querySelector('.form');
-const usernameEl = document.querySelectorAll('#name');
+const inp1 = document.querySelectorAll('.inp1');
+const inp2 = document.querySelectorAll('.inp2');
+const inp3 = document.querySelectorAll('.inp3');
 const emailEl = document.querySelector('#email');
-const fullName = formVal.elements;
 
-// const mediaqueryList = window.matchMedia('(max-width: 768px');
+const oluchiValidate = (inputbox) => {
+  if (inputbox !== '') {
+    return inputbox;
+  }
+  return 'please insert your name';
+};
 
-// const screenTest = (e) => {
-//   if (e.matches) {
-//     fullName.required = false;
-//   } else {
-//     fullName.required = true;
-//   }
-// };
+formVal.addEventListener('submit', (e) => {
+  e.preventDefault();
+  oluchiValidate(inp1.value);
+  oluchiValidate(inp2.value);
+  oluchiValidate(inp3.value);
+});
 
-// screenTest(mediaqueryList);
-
-// mediaqueryList.addEventListener(screenTest);
-
-// const { email } = formVal.elements;
-// const errMsgEmail = document.querySelector('small');
+const errMsgEmail = document.querySelector('small');
 formVal.addEventListener('submit', (e) => {
   e.preventDefault();
   const regex = /[A-Z]/;
-  
+
   if (!regex.test(emailEl.value)) {
     formVal.submit();
   } else {
-    errMsgEmail.innerText = 'Your email should be in the form example@gmail.com';
+    errMsgEmail.innerText = 'Your email should not be in Uppercase';
   }
 });
