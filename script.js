@@ -237,3 +237,45 @@ formVal.addEventListener('submit', (e) => {
     errMsgEmail.innerText = 'Your email should not be in Uppercase!';
   }
 });
+
+// PRESERVE DATA IN BROWSER
+
+const Fullnameinput = document.querySelector('.inp1');
+const Firstnameinput = document.querySelector('.inp2');
+const Lastnameinput = document.querySelector('.inp3');
+const Textareainput = document.querySelector('.inp5');
+const Emailinput = emailEl;
+
+const formInfo2 = JSON.parse(localStorage.getItem('formInfo'));
+if (formInfo2) {
+  Firstnameinput.value = formInfo2.Firstname;
+  Fullnameinput.value = formInfo2.Fullname;
+  Lastnameinput.value = formInfo2.Lastname;
+  Textareainput.value = formInfo2.Textarea;
+  Emailinput.value = formInfo2.Email;
+}
+
+formVal.addEventListener('submit', (event) => {
+  const Fullname = Fullnameinput.value.trim();
+  const Firstname = Firstnameinput.value.trim();
+  const Lastname = Lastnameinput.value.trim();
+  const Textarea = Textareainput.value.trim();
+  const Email = Emailinput.value.trim();
+
+  event.preventDefault();
+
+  // if(!Fullname || !Firstname || !Lastname || !Textarea || !Email){
+  //   return;
+  // }
+
+  const formInfo = {
+    Fullname,
+    Lastname,
+    Firstname,
+    Email,
+    Textarea,
+  };
+
+  // localStorage.setItem('formInfo', JSON.stringify(formInfo));
+  localStorage.setItem('formInfo', formInfo);
+});
