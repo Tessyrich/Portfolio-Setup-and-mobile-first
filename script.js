@@ -237,3 +237,37 @@ formVal.addEventListener('submit', (e) => {
     errMsgEmail.innerText = 'Your email should not be in Uppercase!';
   }
 });
+
+// PRESERVE DATA IN BROWSER
+
+const Fullnameinput = document.querySelector('.inp1');
+const Firstnameinput = document.querySelector('.inp2');
+const Lastnameinput = document.querySelector('.inp3');
+const Textareainput = document.querySelector('.inp5');
+const Emailinput = emailEl;
+
+const saveToLocal = () => {
+  const formInputs = {
+    Fullname: Fullnameinput.value,
+    Firstname: Firstnameinput.value,
+    Lastname: Lastnameinput.value,
+    Textarea: Textareainput.value,
+    Email: Emailinput.value,
+  };
+
+  localStorage.setItem('FormStore', JSON.stringify(formInputs));
+};
+
+[Fullnameinput, Firstnameinput, Lastnameinput, Textareainput, Emailinput].forEach((input) => {
+  input.addEventListener('change', saveToLocal);
+});
+
+if (localStorage.getItem('FormStore')) {
+  const formInfo = JSON.parse(localStorage.getItem('FormStore'));
+
+  Firstnameinput.value = formInfo.Firstname;
+  Fullnameinput.value = formInfo.Fullname;
+  Lastnameinput.value = formInfo.Lastname;
+  Textareainput.value = formInfo.Textarea;
+  Emailinput.value = formInfo.Email;
+}
