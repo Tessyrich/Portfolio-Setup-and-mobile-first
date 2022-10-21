@@ -478,18 +478,6 @@ main {
   height: 7vh;
 }
 
-.tagmain-details {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1.5rem;
-}
-
-.tagmain3 {
-  width: 32%;
-}
-
 .tag1 {
   align-items: center;
   height: 7vh;
