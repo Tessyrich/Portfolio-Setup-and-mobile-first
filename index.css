@@ -431,7 +431,7 @@ main {
 .imgp {
   width: 327px;
   height: 237px;
-  background: url(Img\ Placeholder\ desktop.png);
+  background: url(images/Img\ Placeholder.png);
 }
 
 .block {
@@ -475,6 +475,18 @@ main {
   width: 80%;
   row-gap: 1rem;
   height: 7vh;
+}
+
+.tagmain-details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.tagmain3 {
+  width: 32%;
 }
 
 .tag1 {
