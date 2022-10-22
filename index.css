@@ -1047,7 +1047,8 @@ a :disabled {
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  /* align-items: center; */
   justify-content: center;
   width: 100%;
 }
@@ -1058,7 +1059,7 @@ form {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  margin-bottom: 40px;
+  margin: 2rem 0;
   text-align: center;
   color: #172b4d;
   width: 100%;
@@ -1153,7 +1154,6 @@ small {
 .di {
   height: 1px;
   width: 100%;
-  top: 800px;
   background: #dfe1e6;
 }
 
@@ -1162,6 +1162,7 @@ small {
   height: 5px;
   background: #0d151e;
   border-radius: 10px;
+  margin-right: 2rem;
 }
 
 .menu-bar {
@@ -1474,15 +1475,17 @@ small {
     display: flex;
     flex-direction: row;
     padding-top: 3rem;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 3rem;
   }
 
   .input {
-    width: 50%;
+    width: 60%;
   }
 
   .h2 {
-    width: 40%;
+    width: 32%;
+    text-align: start;
   }
 
   .fin {
@@ -1490,7 +1493,7 @@ small {
   }
 
   .get-in {
-    width: 25%;
+    width: 20%;
   }
 
   .inp1,
@@ -1579,6 +1582,9 @@ small {
     align-items: center;
     justify-content: center;
     width: 100%;
+    top: 0;
+    bottom: 0;
+    margin: 0;
   }
 
   header .hamburger {

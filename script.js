@@ -246,36 +246,28 @@ const Lastnameinput = document.querySelector('.inp3');
 const Textareainput = document.querySelector('.inp5');
 const Emailinput = emailEl;
 
-const formInfo2 = JSON.parse(localStorage.getItem('formInfo'));
-if (formInfo2) {
-  Firstnameinput.value = formInfo2.Firstname;
-  Fullnameinput.value = formInfo2.Fullname;
-  Lastnameinput.value = formInfo2.Lastname;
-  Textareainput.value = formInfo2.Textarea;
-  Emailinput.value = formInfo2.Email;
-}
-
-formVal.addEventListener('submit', (event) => {
-  const Fullname = Fullnameinput.value.trim();
-  const Firstname = Firstnameinput.value.trim();
-  const Lastname = Lastnameinput.value.trim();
-  const Textarea = Textareainput.value.trim();
-  const Email = Emailinput.value.trim();
-
-  event.preventDefault();
-
-  // if(!Fullname || !Firstname || !Lastname || !Textarea || !Email){
-  //   return;
-  // }
-
-  const formInfo = {
-    Fullname,
-    Lastname,
-    Firstname,
-    Email,
-    Textarea,
+const saveToLocal = () => {
+  const formInputs = {
+    Fullname: Fullnameinput.value,
+    Firstname: Firstnameinput.value,
+    Lastname: Lastnameinput.value,
+    Textarea: Textareainput.value,
+    Email: Emailinput.value,
   };
 
-  // localStorage.setItem('formInfo', JSON.stringify(formInfo));
-  localStorage.setItem('formInfo', formInfo);
+  localStorage.setItem('FormStore', JSON.stringify(formInputs));
+};
+
+[Fullnameinput, Firstnameinput, Lastnameinput, Textareainput, Emailinput].forEach((input) => {
+  input.addEventListener('change', saveToLocal);
 });
+
+if (localStorage.getItem('FormStore')) {
+  const formInfo = JSON.parse(localStorage.getItem('FormStore'));
+
+  Firstnameinput.value = formInfo.Firstname;
+  Fullnameinput.value = formInfo.Fullname;
+  Lastnameinput.value = formInfo.Lastname;
+  Textareainput.value = formInfo.Textarea;
+  Emailinput.value = formInfo.Email;
+}
