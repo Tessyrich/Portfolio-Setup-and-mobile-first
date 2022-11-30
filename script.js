@@ -180,7 +180,7 @@ const renderCards = (indx) => {
     if (cardIndx === indx) {
       document.querySelector('.pop-up').innerHTML = `
       <div class="mult">
-      <div class="ham">
+      <div class="ham va">
         <h2 class="post post-small">${card.titlesmall}</h2>
         <h2 class="post post-big">${card.title}</h2>
         <span class="close-pop" id="close-pop" onclick='ClosePopUp()'>&times;</span>
